@@ -1,6 +1,16 @@
-# Contract Management Platform
+# EURUSYS - Contract Management Platform
 
-A modern, frontend-only Contract Management Platform built with React, TypeScript, and Tailwind CSS.
+A Contract Management Platform System for EURUSYS
+
+## 📋 Project Overview
+
+This repository contains a Frontend of Contract Management Platform that enables organizations to create, manage, and track contracts through their entire lifecycle. The platform provides a blueprint-based contract creation system, allowing users to build reusable templates and generate contracts efficiently.
+
+## 🌐 Live Demo
+
+**Deployed Application**: [View Live Demo](https://nawneet77.github.io/Assessment-EURUSYS-/)
+
+The application is hosted on GitHub Pages and is accessible at the link above.
 
 ## 🚀 Setup Instructions
 
@@ -16,6 +26,16 @@ A modern, frontend-only Contract Management Platform built with React, TypeScrip
 
 3.  **Open the application**:
     The app will be available at `http://localhost:5000`.
+
+## 📦 Deployment
+
+To deploy to GitHub Pages:
+
+```bash
+npm run deploy
+```
+
+This will build the application and deploy it to the `gh-pages` branch, making it available at `https://nawneet77.github.io/Assessment-EURUSYS-/`.
 
 ## 🏗 Architecture & Design Decisions
 
@@ -41,17 +61,6 @@ Since no backend is provided, the application uses `ContractContext` (`client/sr
 -   **Persistence**: Data resets on page reload (as per mockup mode limitations, though LocalStorage could be added easily).
 -   **Lifecycle Logic**: State transitions (e.g., Created -> Approved -> Signed) are handled within the context actions to ensure validity.
 
-## 🧩 Assumptions & Limitations
-
-### Assumptions
--   **User Identity**: The app assumes a single "Admin/User" role (`Nawneet Kumar`) who has permission to perform all actions (create, approve, sign). In a real app, "Sign" would likely be restricted to a specific recipient.
--   **Signature**: The signature field is implemented as a simple text input that renders a script font to simulate a digital signature.
--   **Field Types**: Supported field types are Text, Date, Number, Checkbox, and Signature.
-
-### Limitations
--   **No Backend**: All data is ephemeral and lives in memory.
--   **Security**: There is no authentication or actual security.
--   **PDF Generation**: The "Contract View" is HTML-based; actual PDF generation is out of scope for this frontend demo.
 
 ## ✨ Key Features
 1.  **Blueprint Builder**: Dynamic form builder to create reusable contract templates.

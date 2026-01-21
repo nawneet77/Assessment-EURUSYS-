@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting...</title>
+    <script>
+      // GitHub Pages SPA redirect hack
+      // Converts path-based routes to hash-based routes
+      const path = window.location.pathname;
+      const base = '/Assessment-EURUSYS-';
+      
+      // Get the path after the base URL
+      let route = path.replace(base, '').replace(/^\//, '');
+      
+      // Redirect to the hash-based route
+      if (route) {
+        window.location.replace(base + '/#/' + route + window.location.search);
+      } else {
+        window.location.replace(base + '/');
+      }
+    </script>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
+</html>
