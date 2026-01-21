@@ -4,7 +4,11 @@ import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 import { metaImagesPlugin } from "./vite-plugin-meta-images";
 
+
+export const base = "/Assessment-EURUSYS-/"
+
 export default defineConfig({
+  base: base,
   plugins: [
     react(),
     tailwindcss(),
